@@ -1,0 +1,188 @@
+
+h1{
+  position: absolute;
+  margin-top:50px;
+  margin-left: 450px;
+  font-weight: lighter; 
+  font-size: 200px
+}
+
+h2{
+	position: absolute;
+	margin-top:410px;
+	margin-left: 920px;
+}
+
+h3{
+	position: absolute;
+	margin-top:410px;
+	margin-left: 920px;
+}
+
+@media screen and (max-width: 800px)
+ @media screen and (max-width:600px) {
+    #content { float:none; width:98%; margin:0 1%; }
+    #sidebar { float:none; width:98%; margin:0 1%; }
+  }
+
+#wrapper { width:100%; margin:0 auto; max-width:1024px; }
+  #content { float:left; width:63%; margin-left:1%; }
+  #sidebar { float:right; width:33%; margin-right:1%; }
+
+.wrapper{
+	margin: 10px;
+	max-width: 1000px;
+	max-height: 500px;
+}
+
+.container{
+	position: absolute;
+	margin-top:400px;
+	margin-left: 800px;
+}
+
+.circle1{
+	width: 30px;
+	height: 30px;
+	background:#000;
+	border-radius: 75%;
+	position: absolute;
+	animation: anim 1s linear infinite;
+
+}
+
+
+.circle1 : hover { 
+    -webkit-animation-name:none;
+}
+
+@-webkit-keyframes coloranim {
+    0% {
+      background-color:green;
+    }
+    50% {
+      background-color:red;
+    }
+    100% {
+      background-color:blue;
+    }
+  }
+
+.circle2{
+	width: 60px;
+	height: 60px;
+	background:#000;
+	border-radius: 75%;
+	position: absolute;
+	animation: anim 2s linear infinite;
+
+}
+}
+
+
+.circle2 : hover { 
+    -webkit-animation-name:none;
+}
+
+@-webkit-keyframes coloranim {
+    0% {
+      background-color:red;
+    }
+    50% {
+      background-color:blue;
+    }
+    100% {
+      background-color:green;
+    }
+  }
+
+.circle3{
+	width: 40px;
+	height: 40px;
+	background:#000;
+	border-radius: 75%;
+	position: absolute;
+	animation: anim 3s linear infinite;
+
+}
+}
+
+.circle3 : hover { 
+    -webkit-animation-name:none;
+	background-color:blue;
+}
+
+@-webkit-keyframes coloranim {
+    0% {
+      background-color:red;
+    }
+    50% {
+      background-color:blue;
+    }
+    100% {
+      background-color:green;
+    }
+  }
+
+  #circke1 {
+    background-color:black;
+    width:50px;
+    height:50px;
+    -webkit-animation-name: coloranim;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 4;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+@-webkit-keyframes anim{
+	0%{
+		transform-origin: 400% 50%;
+		transform: rotate(0);
+	}
+	50%{
+	}
+	100%{
+		transform-origin: 400% 50%;
+		transform: rotate(360deg);
+	
+	    background-color:green;
+    }
+    50% {
+      	background-color:red;
+    }
+    100% {
+     	background-color:blue;
+    }
+  }
+		
+	}
+}
+
+<style>
+  #wrapper { width:100%; margin:0 auto; max-width:1024px; }
+  #content { float:left; width:63%; margin-left:1%; }
+  #sidebar { float:right; width:33%; margin-right:1%; }
+
+  @media screen and (max-width:600px) {
+    #content { float:none; width:98%; margin:0 1%; }
+    #sidebar { float:none; width:98%; margin:0 1%; }
+  }
+</style>
+<section id='wrapper'>
+  <section id='content'>
+    Content
+  </section>
+  <section id='sidebar'>
+    Sidebar
+
+  </section>
+  <div style='clear:both;'></div>
+</section>
+
+<style>
+  /* Estilos no tocar */
+  #wrapper { background-color:purple; padding:20px 0px; }
+  #content { background-color:white; color:black; min-height:300px; }
+  #sidebar { background-color:darkgray; color:white; min-height:300px; }
+</style>
